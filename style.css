@@ -1,0 +1,237 @@
+@font-face {
+  font-family: solide;
+  src: url(fonts/Solide_Mirage-Mono_web.ttf);
+}
+
+#page1{
+  background: linear-gradient(#ffffff, #fefefe);
+  }
+#page2{background-color:rgb(255, 255, 255);}
+#page3{background-color:#00f;}
+
+body {
+  background: black;
+  background-attachment:fixed;
+height:100%;
+}
+
+.flex-item {
+  background:  #ffffff;
+  padding: 0px;
+  
+  width: 32.7%;
+  margin-top: 10px;
+  border-radius: 200px;
+  border-style: dotted;
+  font-family: solide;
+
+  line-height: 50px;
+  color: rgb(255, 0, 0);
+  font-weight: bold;
+  font-size: 1em;
+  text-align: center;
+}
+
+
+h2 {
+  font-family: solide;
+    font: 100px solide;
+    margin-top: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    color: rgb(255, 0, 0);
+    
+}
+
+h2.background {
+    position: relative;
+    z-index: 1;
+   
+}
+    
+    &:before {
+        border-top: 2px solid #222262;
+        content:"hello";
+        margin: 0 auto;
+    }
+
+                                                    
+
+    {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    .stage{
+      height: 950px;
+      width: 100vw;
+      margin-left: auto;
+      margin-right: auto;
+      font-family: Soldie;
+    }
+    .p{
+      font-size: 20px;
+      font-family: solide;
+      padding: 22px 0;
+      text-align: center;
+      margin-top: 0;
+      color: rgb(255, 0, 0);
+      width: 100%;
+      border-radius: 200px;
+      
+      letter-spacing: 10px;
+    }
+    .div{
+      margin-left: auto;
+      margin-right: auto;
+      border-radius: 200px;
+      width: 100vh;
+      height: 100px;
+      margin-top: 0%;
+      background: #ffffff;
+     transition-duration: 1s;
+     border-style: dotted;
+     color: red;
+     
+    
+    }
+
+    .div:hover{
+     
+      color: rgb(216, 255, 159);
+      transition-duration: 1s;
+      
+
+    }
+    
+
+    
+
+    .p:hover{
+     
+      color: rgb(0, 0, 0);
+      transition-duration: 1s;
+    }
+    .div:nth-child(odd){
+      transform: perspective(300px) rotateZ(-8deg);
+      box-shadow: -2px 2px 7px gray;
+      
+      
+    }
+    .div:nth-child(even){
+      transform: perspective(300px) rotateZ(8deg);
+        box-shadow: 2px 2px 7px gray;
+    }
+    .div:hover{
+      transform: rotateY(0);
+      background: linear-gradient(rgb(246, 78, 78), rgba(0, 0, 0, 0));
+      color: black;
+      box-shadow: 0px 0px 0px;
+      z-index: 3000;
+    }
+    
+
+/* Style the video: 100% width and height to cover the entire window */
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+/* Add some content at the bottom of the video/page */
+.content {
+  position: fixed;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+}
+
+
+
+
+@import "compass/css3";
+
+.flex-container {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  
+  -webkit-flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+
+
+#cursor {
+  position: fixed;
+  z-index: 99;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+  will-change: transform;
+  mix-blend-mode: difference;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .cursor__circle {
+    width: 99px;
+    height: 99px;
+    margin-top: -50%;
+    margin-left: -50%;
+    border-radius: 50%;
+    border: solid 2px rgba(255, 0, 0, 0.64);
+    border-style: dotted;
+    transition opacity 0.3s cubic-bezier(0.25, 1, 0.5, 1),
+      background-color 0.3s cubic-bezier(0.25, 1, 0.5, 1),
+      border-color 0.3s cubic-bezier(0.25, 1, 0.5, 1),
+      width 0.3s cubic-bezier(0.25, 1, 0.5, 1),
+      height 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+  }
+  
+  #cursor.arrow .cursor__circle{
+    width: 128px;
+    height: 128px;
+    background-color: #ff0000;
+    border-color: #ff0000;
+  }
+  
+
+  
+  #cursor.subtle .cursor__circle{
+    opacity: 0.16;
+  }
+  
+
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  text-decoration: none;
+}
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,61 @@
+body {
+    margin: 0;
+    color: rgb(255, 115, 0);
+    font-family: Roboto, sans-serif;
+    background-color: rgb(255, 197, 116);
+    background-image: radial-gradient(
+      circle farthest-corner at center,
+      #ffffff 0,
+      rgb(255, 255, 255) 100%
+    );
+  }
+  section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    min-height: 100vh;
+    overflow: hidden;
+  }
+  .text {
+    padding: 0;
+    margin: 0;
+    position: relative;
+    margin: 40px;
+    width: 100%;
+    text-align: center;
+    max-width: calc(80vw - 90px);
+    user-select: none;
+    font-size: 2em;
+  }
+  .text span {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  .active {
+    animation: smoke 2s forwards;
+    transform-origin: 50% 100%;
+  }
+  
+  @keyframes smoke {
+    0% {
+      opacity: 1;
+      filter: blur(0);
+      transform: translateX(0) translateY(0) rotate(0deg) scale(1);
+    }
+  
+    50% {
+      opacity: 1;
+      pointer-events: none;
+    }
+    100% {
+      opacity: 0;
+      filter: blur(20px);
+      transform: translateX(300px) translateY(-300px) rotate(720deg) scale(4);
+    }
+  }
+  
